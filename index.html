@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalise.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Тестовое задание</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="headline">
+        <div class="container">
+          <h1 class="title">Брылкин Василий</h1>
+          <section class="Me_fhoto">
+            <img class="img-me" src="img/2.jpg" alt="ME" />
+            <img class="img-me" src="img/1.jpg" alt="ME" />
+            <img class="img-me" src="img/3.jpg" alt="ME" />
+          </section>
+          <!--Элемент для открытия информации обо мне-->
+          <a href="#about" onclick="openbox()" class="headline-btn"
+            >Показать больше информации</a
+          >
+        </div>
+      </section>
+      <section id="about" class="new">
+        <div class="container">
+          <h2 class="new-title">Обо мне</h2>
+          <div class="new-info">
+            <div class="new-text">
+              <p>
+                Окончил школу с золотой медалью. Прикладная математика и
+                информатика 2 курса. Перешел на Прикладную информатику, по
+                результатам 3 курса средний бал 5,00, на данный момент учусь на
+                4 курсе.
+              </p>
+              <p>
+                Успешно прошел IT марафон Case-Lab Бизнес-системы в компании
+                Гринатом, по результатам стал 3 по направлению разработки.На
+                данный момент мои проекты ограничиваются курсовыми и
+                практическими работами от ВУЗа.
+              </p>
+              <p>
+                Хорошие знания HTML, CSS, знаком с PHP и JS на базовом уровне.
+                Изучал, работал с базами данных и SQL. Разрабатывал приложения
+                на C++ и C#. Занимался исследованиями нейросетевых модулей на
+                языке Python.
+              </p>
+              <b>
+                Я собираюсь постоянно совершенствовать свои навыки, изучать
+                последние тенденции и технологии в веб-разработке и стремиться к
+                профессиональному росту как веб-разработчика. Я верю, что с
+                постоянным обучением и практикой я смогу достичь своей цели -
+                стать веб-разработчиком.
+              </b>
+            </div>
+            <img class="img-new" src="img/orig.jpg" alt="WD_man" />
+          </div>
+        </div>
+      </section>
+      <section class="choice_contact">
+        <div class="container">
+          <h2 class="contact-title">Свяжитесь со мной</h2>
+          <div class="choise_section">
+            <div class="contact">
+              <a href="https://vk.com/vasily_brylkin">
+                <img class="img-choice" src="img/vk.png" alt="VKontakte" />
+              </a>
+              <h3>VKontakte</h3>
+            </div>
+            <div class="contact">
+              <a href="https://instagram.com/brylkin_?igshid=YTQwZjQ0NmI0OA==">
+                <img
+                  class="img-choice"
+                  src="img/instagram.png"
+                  alt="instagram"
+                />
+              </a>
+              <h3>Instagram</h3>
+            </div>
+            <div class="contact">
+              <a href="https://t.me/brylkin">
+                <img class="img-choice" src="img/telegram.png" alt="telegram" />
+              </a>
+              <h3>Telegram</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function openbox(about) {
+        display = document.getElementById("about").style.display;
+        if (display == "none") {
+          document.getElementById("about").style.display = "flex";
+        } else {
+          document.getElementById("about").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
